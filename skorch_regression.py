@@ -1,3 +1,8 @@
+
+## This was just a test of the skorch library,
+## that wraps pytorch model classes to be sklearn models that can then be used with the convenient sklearn pipeline module
+## but not related to the rest of the project directly, this was a test, with the goal of doing the same later for the rest of the regression project.
+
 import torch
 from torch import nn
 import pandas as pd
