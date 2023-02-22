@@ -4,8 +4,8 @@ from sklearn.ensemble import GradientBoostingRegressor
 # from sklearn.neural_network import MLPRegressor
 from xgboost import XGBRegressor
 
-full_train_data = pd.read_csv(r'C:\Users\M\OneDrive - Carleton University\Documents\my_stuff\Projects\Kaggle_House_Prices\train.csv')
-test_data = pd.read_csv(r'C:\Users\M\OneDrive - Carleton University\Documents\my_stuff\Projects\Kaggle_House_Prices\test.csv')
+full_train_data = pd.read_csv(r'')
+test_data = pd.read_csv(r'')
 
 full_features = full_train_data.drop(['Id', 'SalePrice'], axis=1)
 test_data = test_data.drop(['Id'], axis=1)
@@ -53,6 +53,6 @@ make_sklearn_pipeline(train_set_components, target, test_set_components, good_nu
 # print (test_predictions.shape)
 # print (test_predictions)
 
-# test_predictions.to_csv(r'C:\Users\M\OneDrive - Carleton University\Documents\my_stuff\Projects\Kaggle_House_Prices\predicted_prices_submission_attempt4_xgbregressor.csv')
+# test_predictions.to_csv(r'')
 
 
