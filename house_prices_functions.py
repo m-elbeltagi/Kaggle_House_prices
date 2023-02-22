@@ -9,7 +9,7 @@ from sklearn.feature_selection import SelectKBest
 from sklearn.feature_selection import mutual_info_regression
 
 
-## don't use, doesnt improve performance
+## didn't end up improving performance significantly
 def alternate_preprocess(data_set):  ## just return all categorical to use OH encoding    
         ## columns with missing values
         cols_with_na = [col for col in data_set.columns if data_set[col].isnull().any()]
