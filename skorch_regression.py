@@ -5,8 +5,8 @@ from skorch import NeuralNetClassifier
 from house_prices_functions import *
 
 
-full_train_data = pd.read_csv(r'C:\Users\M\OneDrive - Carleton University\Documents\my_stuff\Projects\Kaggle_House_Prices\train.csv')
-test_data = pd.read_csv(r'C:\Users\M\OneDrive - Carleton University\Documents\my_stuff\Projects\Kaggle_House_Prices\test.csv')
+full_train_data = pd.read_csv(r'')
+test_data = pd.read_csv(r'')
 
 full_features = full_train_data.drop(['Id', 'SalePrice'], axis=1)
 test_data = test_data.drop(['Id'], axis=1)
@@ -56,4 +56,3 @@ test_set_components = preprocess_function(test_data)
 make_sklearn_pipeline(train_set_components, target, test_set_components, model, n_xvalid=5, train_or_test=0)
 
 
-## Doesnt work, I don't think it can handle the OH encoding because it changes the dim of input data, I thougt the wrapper could handle this, but maybe not
